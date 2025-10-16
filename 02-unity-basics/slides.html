@@ -1,0 +1,187 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+		<title>פיתוח משחקי מחשב - מנוע יוניטי</title>
+
+		<link rel="stylesheet" href="../revealjs/css/reset.css" />
+		<link rel="stylesheet" href="../revealjs/css/reveal.css" />
+		<link rel="stylesheet" href="../revealjs/css/theme/black.css" />
+		<link rel="stylesheet" href="../revealjs/lib/css/monokai.css" />		<!-- Theme used for syntax highlighting of code -->
+
+		<link rel="stylesheet" href="../utils/slides.css" />
+	</head>
+<body>
+
+<div class="reveal">
+<div class="slides">
+
+<section class="firstslide">
+	<h1>פיתוח
+	<br/>
+		משחקי מחשב</h1>
+	<h2> מנוע יוניטי </h2>
+	<p>אראל סגל-הלוי</p>
+</section>
+
+
+
+
+<section>
+<h1>מנוע משחק</h1>
+	<p class="blue">
+מנוע לפיתוח משחקי מחשב (Game Development Engine) כולל בדרך-כלל:
+	</p>
+	<ol class="fragment">
+		<li>מערכת לניהול של עצמים, מאפיינים, התנהגויות ויחסים.</li>
+		<li>מנוע גרפי לתצוגה דו-ממדית ותלת-ממדית.</li>
+		<li>מנוע פיסיקלי לחישוב כוחות והתנגשויות.</li>
+		<li>מנוע קול לניגון קבצי שמע.</li>
+		<li>מנוע סקריפטים ליישום לוגיקת משחק.</li>
+		<li>מנוע אנימציה.</li>
+		<li>התאמה לפלטפורמות שונות.</li>
+	</ol>
+</section>
+
+
+
+<section>
+<h1>השוואת מנועים</h1>
+	<p class="blue">
+	יש עשרות מנועי-משחקים שונים.
+	הנפוצים ביותר הם:
+	</p>
+	<table>
+		<thead>
+		<col />
+		<col />
+		<col/>
+		<col />
+		<col />
+		<col />
+		</thead>
+		<tbody>
+		<tr>
+			<th></th>
+			<th>שפה</th>
+			<th>רשיון</th>
+			<th>קוד</th>
+			<th>Steam</th>
+			<th>Itch.io</th>
+		</tr>
+
+		<tr style="background:#08f">
+			<th>Unity</th>
+			<td>C#</td>
+			<td style="font-size:32px" >חינם אם מרויחים פחות מ-100,000 $</td>
+			<td>סגור</td>
+			<td>889 (#2)</td>
+			<td>24200 (#1)</td>
+		</tr>
+
+		<tr style="background:#0f0">
+			<th>Unreal</th>
+			<td>C++</td>
+			<td style="font-size:32px" >5% מהרווחים.</td>
+			<td>גלוי</td>
+			<td>1726 (#1)</td>
+			<td>1458 (#8)</td>
+		</tr>
+
+		</tbody>
+	</table>
+<a class="small" href="https://www.gamasutra.com/blogs/MarcusToftedahl/20190930/350830/Which_are_the_most_commonly_used_Game_Engines.php">מקור המידע</a>
+</section>
+
+
+<section>
+	<h2>התחלה</h2>
+	<ul>
+		<li class="fragment">התקנת Unity Hub</li>
+		<li class="fragment">התקנת מנוע Unity - בקורס נעבוד עם גרסת LTS המעודכנת ביותר.</li>
+		<li class="fragment">יצירת פרויקט חדש.</li>
+	</ul>
+	
+	</p>
+	  </ol>
+</section>
+
+
+<section>
+<h2>יוניטי - מושגי יסוד</h2>
+	<ol style="font-size:28px">
+		<li>העורך הראשי</li>
+		<li>עצם-משחק - GameObject</li>
+		<li>רכיב - Component</li>
+		<li>רכיב מיקום - Transform</li>
+		<li>רכיב תצוגה - Renderer</li>
+		<li>סקריפטים בשפת C#</li>
+		<li>התנהגויות - MonoBehavior</li>
+		<li>קשר בין רכיבים - GetComponent</li>
+		<li>זמנים ומהירויות - Time.deltaTime</li>
+		<li>מאפיינים - Properties [SerializeField] [Tooltip]</li>
+		<li>מצלמה - Camera</li>
+		<li>תת-עצמים</li>
+	</ol>
+</section>
+
+<section>
+	<h2>יוניטי - קלט מהמשתמש</h2>
+		<ol style="font-size:28px">
+			<li>פעולת קלט - InputAction</li>
+			<li>פעולה חד-ממדית - type: InputActionType.Button</li>
+			<ul>
+				<li>OnEnable, OnDisable</li>
+				<li>תנועה בדידה - WasPressedThisFrame</li>
+				<li>תנועה רציפה - IsPressed</li>
+			</ul>
+			<li>פעולה שמחזירה ערך דו-ממדי - type: InputActionType.Value, expectedControlType: nameof(Vector2)</li>
+			<ul>
+				<li>OnEnable, OnDisable</li>
+				<li>קריאת הערך - <span dir='ltr'>ReadValue&lt;Vector2&gt;()</span></li>
+				<li>תרגום מיקום במסך למיקום בעולם - Camera.main.ScreenToWorldPoint</li>
+			</ul>
+			<li>ניהול פעולות קלט - PlayerInput component</li>
+			<ul>
+				<li>תנועה בדידה - <span dir='ltr'>OnMove(InputValue value): position += value.Get&lt;Vector2&gt;()</span></li>
+				<li>תנועה רציפה - <span dir='ltr'>OnMove(InputValue value) + Update()</span></li>
+			</ul>
+		</ol>
+	</section>
+	
+
+<section>
+<h2>יוניטי - פרטים טכניים</h2>
+	<ol>
+		<li>
+			<a href='4-github-and-unity.pdf'>
+				העלאת המשחק שלכם לגיטהאב
+		</a></li>
+		<li class="fragment">שינוי גודל התצוגה - Game/Simulator</li>
+		<li class="fragment">התאמת הרקע לתצוגה - Canvas, Image</li>
+		<li class="fragment">בנית המשחק - Build Profiles: Windows, WebGL</li>
+		<li class="fragment">גודל מסך המשחק - Player Settings</li>
+		<li class="fragment">פירסום המשחק -
+		<a href="http://itch.io">itch.io</a>
+		</li>
+	
+	</ol>
+</section>
+
+
+</div>
+</div>
+
+
+
+</div>
+</div>
+
+
+<script src="../revealjs/js/reveal.js"></script>
+<script src="../utils/slides.js"></script>
+
+</body>
+</html>
