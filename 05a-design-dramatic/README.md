@@ -1,4 +1,4 @@
-# Design week 1: inspiration and formal elements
+# Design week 2: dramatic elements
 
 ## מטלות
 

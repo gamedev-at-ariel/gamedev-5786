@@ -1,4 +1,6 @@
-# Design week 1: inspiration and formal elements
+# Unity week 3: Physics
+
+Code samples can be found [here](https://github.com/gamedev-at-ariel) in repository 04-physics.
 
 ## מטלות
 
@@ -6,4 +8,3 @@
 
 * [מטלה שבועית](homework.pdf)
 * [מטלה מתגלגלת](yourgame.pdf)
-
