@@ -7,17 +7,18 @@
 -----
 
 * [CloseApp](https://closeapp.co.il/) - משחקים חינוכיים למגוון פלטפורמות; כפר-תפוח.
-* [Ilyon](https://www.ilyon.net/) - משחקים לניידים; ראש-העין.
-* [CrazyLabs](https://www.crazylabs.com/) - משחקים מהירים לניידים; תל-אביב.
+* [Ilyon](https://www.ilyon.net/) - פיתוח משחקים לניידים; ראש-העין.
+* [CrazyLabs](https://www.crazylabs.com/) - פירסום ושיווק משחקים מהירים לניידים; תל-אביב.
 * [MoonActive](https://www.moonactive.com/) - משחקים לניידים; תל-אביב.
 * [Playtika](https://www.playtika.com/) - משחקים לניידים; הרצליה ותל-אביב.
 * [Plarium](https://plarium.com/) - משחקי אונליין מרובי-שחקנים; הרצליה.
 * [OverWolf](https://www.overwolf.com/) - פלטפורמה לבניית מודים ואפליקציות בתוך משחקים; רמת-גן.
+* [HappyJuice](https://www.happyjuice.games/) - סטודיו עצמאי שפיתח משחקים מקוריים זוכי פרסים; תל-אביב.
 * [Makeree](https://www.makeree.com) - הדמיות הדגמות ומדריכים אינטראקטיביים; הרצליה.
 * [Matific](https://www.makeplayrepeat.com) - פיתוח משחקים ללימוד חשבון; תל-אביב.
 * [Toya](https://www.toyaplay.com) - פיתוח משחקי רובלוקס, עם דגש על שחקניות; תל-אביב.
 * [BeachBum](https://www.bbumgames.com/) - משחקים לניידים; רעננה.
-* [Voodoo](https://www.voodoo.io) - משחקים לניידים; יש סניף פיתוח בתל-אביב.
+* [Voodoo](https://www.voodoo.io) - פירסום ושיווק משחקים לניידים; יש סניף פיתוח בתל-אביב.
 * [Novos](https://www.novos.gg/) - פלטפורמה לאימון שחקני פורטנייט; תל-אביב.
 * [Veryo Studios](https://www.apesrevenge.com/) - משחקים לניידים עם מודעות סביבתית.
 * [MakePlayRepeat](https://www.makeplayrepeat.com) - סטודיו לעיצוב משחקים.
@@ -25,7 +26,7 @@
 * [OneCode](https://onecode.co.il/) - פיתוח חוויות-משתמש משחקיות.
 * [3EEL](https://3eel.com/) - משחקי אסטרטגיה מציאותיים; כרמיאל.
 * [Spinomenal](https://spinomenal.com/) - משחקי מזל.
-* עוד: Papaya gaming, IronSource(?), Playstudios, SciPlay
+* עוד: Papaya gaming, Playstudios, SciPlay, Nitako Games, IronSource
 
 אנשים
 -----
