@@ -52,3 +52,7 @@ iframe { border: none; }  /* An embedded video */
 iframe.quarter, img.quarter { height:250px;  width:500px; }  /* An embedded video that takes about a quarter of a slide. */
 iframe.half {height:400px; width:1000px;}
 iframe.whole {height:800px; width:1000px;}
+
+td.videocell {  text-align:center; vertical-align: middle; font-size:smaller; }
+
+.reveal p {margin: 0px}
