@@ -11,8 +11,6 @@ Inspired by the Udemy course:
 
 ## מטלות
 
-**טיוטה** - נא לא לפתור עד לקבלת הודעה בקבוצת הדיוור:
-
-* [מטלה שבועית](homework.pdf)
-* [מטלה מתגלגלת](yourgame.pdf)
+* [מטלה שבועית](homework.improvegame.pdf)
+* [מטלה מתגלגלת](yourgame.leveldesign.pdf)
 
