@@ -6,5 +6,5 @@ Code samples can be found [here](https://github.com/gamedev-at-ariel) in reposit
 
 **טיוטה** - נא לא לפתור עד לקבלת הודעה בקבוצת הדיוור:
 
-* [מטלה שבועית](homework.pdf)
+* [מטלה שבועית](homework-architecture.pdf)
 * [מטלה מתגלגלת](yourgame.pdf)
