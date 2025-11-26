@@ -13,6 +13,7 @@
 
 -   [Interactive Fiction Database](https://ifdb.tads.org/viewcomp?id=p6s9uem6td8rfihv) –
  משחקי טקסט – החמישים הטובים ביותר בכל הזמנים. למי שמעדיף סיפור טוב על-פני גרפיקה.
+ראו גם [משחקי הטקסט של אנדרו פלוטקין](https://eblong.com/zarf/if.html).
 
 -   [Board game arena](Board%20game%20arena) – 
 מעל 100 משחקי-לוח ישנים וחדשים אונליין.

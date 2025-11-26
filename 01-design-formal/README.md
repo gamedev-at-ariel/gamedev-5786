@@ -1,4 +1,4 @@
-# Design week 1: inspiration and formal elements
+# עיצוב - חלק 1: השראה ורכיבים רשמיים
 
 ## מטלות
 
