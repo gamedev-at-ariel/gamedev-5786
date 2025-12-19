@@ -4,4 +4,5 @@
 
 * [מטלה שבועית](homework.pdf)
 * [מטלה מתגלגלת](yourgame.pdf)
+* [מטלת רשות - לא להגשה](playwork.pdf)
 
