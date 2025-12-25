@@ -2,7 +2,7 @@
 
 ## מטלות
 
-* [מטלה שבועית](homework.pdf)
-* [מטלה מתגלגלת](yourgame.pdf)
-* [מטלת רשות - לא להגשה](playwork.pdf)
+* [המטלה השבועית הפעם היא רשות - לא להגשה](playwork.pdf)
+* [מטלה מתגלגלת א - רכיבים דינמיים](yourgame-dynamic.pdf)
+* [מטלה מתגלגלת ב - בדיקות](yourgame-tests.pdf)
 
