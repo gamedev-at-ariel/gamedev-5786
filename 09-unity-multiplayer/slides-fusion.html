@@ -108,11 +108,21 @@
 
 	<section>
 		<h2>יצירה והריסה</h2>
-		יש להפוך את השחקן ל"דגם" ולקשר אותו ל-PrototypeRunner.
+		יש להפוך את השחקן ל"דגם" (prefab).
 		<ul>
 			<li class="fragment">Runner.Spawn: יצירת עצם רשת <small>(במקום Instantiate)</small>.</li>
 			<li class="fragment">Runner.Despawn: הריסת עצם רשת <small>(במקום Destroy)</small>.</li>
 			<li class="fragment">Spawned: אירוע יצירת עצם רשת <small>(במקום Awake, Start)</small>.</li>
+			<li class="fragment">ראו סצנה 2</li>
+		</ul>
+	</section>
+
+	<section>
+		<h2>קלט</h2>
+		<ul>
+			<li class="fragment">הקוד המקומי מעדכן את הקלט דרך אירוע OnInput, פונקציה input.Set(data)</small>.</li>
+			<li class="fragment">השחקן קורא את העדכון ב FixedUpdateNetwork, ע"י GetInput(out NetworkInputData data)</small>.</li>
+			<li class="fragment">ראו סצנה 2</li>
 		</ul>
 	</section>
 
