@@ -56,17 +56,41 @@
 </section>
 
 <section>
+<h1>Fusion - טופולוגיות</h1>
+<ol style="font-size:36px">
+	<li>Dedicated Server: בונים קוד מיוחד שמותקן על שרת ייעודי. הסמכות לשינוי המצב נתונה לשרת בלבד. 
+		הלקוחות יכולים להשפיע על המצב רק ע"י שליחת בקשה לשרת. יתרון: הכי בטוח. חיסרון: הכי יקר ומסובך. מתאים למשחקים תחרותיים.
+	</li>
+	<li>
+		Host-Client:  אחד השחקנים (כברירת מחדל: הראשון שנכנס לחדר) הוא ה"מארח". הוא משמש גם כשרת, וגם כאחד השחקנים. יתרון: יותר פשוט וזול. חיסרון: פחות בטוח - המארח יכול לרמות. מתאים למשחקים חברתיים.
+	</li>
+	<li>
+		Shared: הסמכות לשינוי המצב היא משותפת: לכל שחקן יש סמכות לשנות את העצמים שהוא יוצר. יתרונות: קל ומהיר, מתאים למשחקים על ניידים. חסרון: פחות בטוח מפני שינויים.
+	</li>
+</ol>
+</section>
+
+<section>
 	<img width='100%' height="100%" src="fusion-06.jpg"/>
 </section>
 
 <section>
 	<h1>מנוע Fusion - הכנה</h1>
 	<ol>
-		<li class="fragment"><a href="https://www.photonengine.com/">באתר פוטון</a>: פתיחת חשבון, יצירת אפליקציה,  <a href="https://doc.photonengine.com/fusion/current/getting-started/sdk-download">הורדת החבילה</a>.</li>
+		<li class="fragment"><a href="https://www.photonengine.com/">באתר פוטון</a>:  חשבון, יצירת אפליקציה,  <a href="https://doc.photonengine.com/fusion/current/getting-started/sdk-download">הורדת החבילה</a>.</li>
 		<li class="fragment">ביוניטי: פרוייקט חדש, ייבוא חבילת פיוזן <small>(Assets, Import Package, Custom Package)</small>
-				ייבוא חבילת מונו-ססיל <small>(Package Manager, +, from git URL, com.unity.nuget.mono-cecil@1.10.2)</small></li>
-		<li class="fragment">Fusion - Fusion Hub - Fusion Setup - App ID</li>
-		<li class="fragment">Hierarchy - Fusion - Setup - Add Networking to Scene</li>
+		</li>
+		<!-- li class="fragment">
+				ייבוא חבילת מונו-ססיל <small>(Package Manager, +, from git URL, com.unity.nuget.mono-cecil@1.10.2)</small -->
+		</li>
+		<li class="fragment">
+			Edit - Project Settings - Editor - Asset Serialization - Force Text
+		</li>
+		<li class="fragment">Tools - Fusion - F. Hub - F. Setup - App ID</li>
+		<!-- li class="fragment">Hierarchy - Fusion - Setup - Setup Networking in the Scene</li -->
+		<li class="fragment">Fusion Launcher (scene 1)</li>
+		<li class="fragment">Package Manager - Multi Player Play Mode</li>
+		<li class="fragment">Window - Multiplayer - Multi Player Play Mode</li>
 	</ol>
 </section>
 
