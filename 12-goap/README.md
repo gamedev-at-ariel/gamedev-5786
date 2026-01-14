@@ -1,4 +1,4 @@
-== GOAP - Goal Oriented Action Planning ==
+# GOAP - Goal Oriented Action Planning
 
 By: Aviv Neeman and Gal Mimon.
 
