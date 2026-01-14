@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>בניית המשחק שלכם לטלפונים ניידים</title>
+
+		<link rel="stylesheet" href="../revealjs/css/reset.css">
+		<link rel="stylesheet" href="../revealjs/css/reveal.css">
+		<link rel="stylesheet" href="../revealjs/css/theme/black.css">
+		<link rel="stylesheet" href="../revealjs/lib/css/monokai.css">		<!-- Theme used for syntax highlighting of code -->
+
+		<link rel="stylesheet" href="../utils/slides.css">
+	</head>
+<body>
+
+<div class="reveal">
+<div class="slides">
+
+<section class="firstslide">
+	<h1>פיתוח
+	<br/>
+		משחקי מחשב</h1>
+	<h2> בניית המשחק שלכם לטלפונים ניידים </h2>
+	<p>אראל סגל-הלוי</p>
+</section>
+
+<section>
+	<h1>למה לבנות לטלפון נייד?</h1>
+	<ul>
+		<li>כי תעשיית המשחקים בישראל מייצרת (כמעט) רק משחקים לניידים.</li>
+		<li>כי בישראל (כמעט) רק משחקים לניידים מרויחים כסף.</li>
+	</ul>
+</section>
+
+<section>
+	<h2>הכנה</h2>
+	<ul dir="ltr">
+		<li>Unity Hub - Open as Admin - Installs - 
+			<br/>
+			[your Unity version] - Manage - Add Modules -
+			<br/>
+			Android Build Support [mark all components]
+		</li>
+		<li>File - Build Profiles - Android - Switch Platform.</li>
+		<li>Player Settings - Other Settings - Package Name - com.[company].[game].</li>
+		<li>Player Settings - Other Settings - Scripting Backend - IL2CPP.</li>
+		<li>Player Settings - Other Settings - Target Architectures - ARM64.</li>
+	</ul>
+</section>
+
+<section>
+	<h2>התאמת המשחק</h2>
+	<ul>
+		<li>פקדי  מגע במקום מקלדת:
+				<br/>Binding - TouchScreen - Delta
+				<br/>Scale Vector2 0.005
+		</li>
+		<li>פקדי  מגע במקום עכבר:
+				<br/>Binding - TouchScreen - Press
+				<br/>Binding - TouchScreen - Position
+		</li>
+		<li>
+			כיוון: בהתאם למשחק
+			<br/>Player Settings - Resolution and Presentation - Default Orientation
+		</li>
+	</ul>
+</section>
+
+<section>
+	<h2>בנייה והתקנה</h2>
+	<ul>
+		<li>Build - בונים קובץ עם סיומת apk;</li>
+		<li>מעבירים לנייד (למשל דרך דרופבוקס);</li>
+		<li>פותחים את הקובץ בנייד, מתקינים ומשחקים</li>
+	</ul>
+</section>
+
+<section>
+	<h2>פרסומות</h2>
+	הדרך הפשוטה ביותר להרויח כסף מהמשחק.
+	<ul>
+		<li class="fragment">פלטפורמות להצגת פרסומות:
+		<br/>Google AdMob 
+		<br/> Unity LevelPlay.
+		<li class="fragment">
+			פרסומות ניסוי: TestAds
+			<br/>Interstitial - עמוד מלא.
+			<br/>Banner - כרזה.
+		</li>
+		<li class="fragment">
+			פרסומות אמיתיות - רק אחרי שמפרסמים בחנות GooglePlay.
+		</li>
+	</ul>
+</section>
+
+<section>
+	<h2>Google AdMob</h2>
+	<ul>
+		<li>Assets - Google Mobile Ads - Settings:
+			<br/>App Id for test: ca-app-pub-3940256099942544~3347511713
+			<br/>App Id for real: get from <a href='https://admob.google.com/'>https://admob.google.com</a>
+		</li>
+	</ul>
+</section>
+
+<section>
+	<h2>פרסום בחנות GooglePlay</h2>
+	תהליך יקר וקשה, אבל חיוני כדי להגיע ללקוחות ולהרויח כסף.
+	<ul>
+		<li class="fragment">פותחים חנות GooglePlay - משלמים 25 דולר;</li>
+		<li class="fragment">ממלאים כמויות עצומות של טפסים ומחכים לאישור.</li>
+		<li class="fragment">Build Profiles - Build App Bundle - True (.aab);</li>
+		<li class="fragment">מעלים קובץ aab לחנות שלכם.</li>
+		<li class="fragment">ממלאים עוד כמויות עצומות של טפסים על המשחק שלכם.</li>
+		<li class="fragment">מחכים לאישור, ו... המשחק שלכם בחנות.</li>
+	</ul>
+</section>
+
+</div>
+</div>
+
+
+
+<script src="../revealjs/js/reveal.js"></script>
+<script src="../utils/slides.js"></script>
+
+</body>
+</html>
